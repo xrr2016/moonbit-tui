@@ -199,6 +199,11 @@ fn color(code : Int) -> String {
 }
 
 ///|
+pub fn color_with_bg(fg : Int, bg : Int) -> String {
+  "\u001B[\{fg};\{bg}m"
+}
+
+///|
 pub fn clear_line() -> String {
   "\u001B[2K"
 }
