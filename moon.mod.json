@@ -8,7 +8,9 @@
   "repository": "https://github.com/xrr2016/moonbit-tui",
   "license": "Apache-2.0",
   "keywords": [
-    "terminal"
+    "terminal",
+    "colors",
+    "ansi"
   ],
   "source": "src",
   "preferred-target": "native"
