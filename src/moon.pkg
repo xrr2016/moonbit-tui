@@ -1,5 +1,5 @@
 import {
-  "xrr2016/tui/ansi",
-  "xrr2016/tui/input",
+  "xrr2016/tui/colors",
+  "xrr2016/tui/inputs",
   "xrr2016/tui/prompts",
 }
