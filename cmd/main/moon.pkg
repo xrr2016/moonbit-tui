@@ -1,0 +1,7 @@
+// import {
+//   "xrr2016/tui" @lib,
+// }
+
+options(
+  "is-main": true,
+)
