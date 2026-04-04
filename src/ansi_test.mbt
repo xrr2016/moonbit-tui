@@ -1,0 +1,4 @@
+///|
+test "clear" {
+  @tui.clear()
+}

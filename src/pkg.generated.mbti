@@ -1,0 +1,14 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "xrr2016/tui/src"
+
+// Values
+pub fn clear() -> Unit
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+
+// Traits
+
