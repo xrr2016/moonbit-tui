@@ -1,6 +1,6 @@
 {
   "name": "xrr2016/tui",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "deps": {
     "moonbitlang/async": "0.17.0"
   },
@@ -9,8 +9,11 @@
   "license": "Apache-2.0",
   "keywords": [
     "terminal",
+    "ui",
     "colors",
-    "ansi"
+    "ansi",
+    "inputs",
+    "prompts"
   ],
   "source": "src",
   "preferred-target": "native"
