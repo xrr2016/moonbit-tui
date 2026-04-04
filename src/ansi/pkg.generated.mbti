@@ -2,7 +2,89 @@
 package "xrr2016/tui/ansi"
 
 // Values
-pub fn clear_screen() -> Unit
+pub fn bgBlack(String) -> String
+
+pub fn bgBlue(String) -> String
+
+pub fn bgBlueBright(String) -> String
+
+pub fn bgCyan(String) -> String
+
+pub fn bgCyanBright(String) -> String
+
+pub fn bgGray(String) -> String
+
+pub fn bgGreen(String) -> String
+
+pub fn bgGreenBright(String) -> String
+
+pub fn bgMagenta(String) -> String
+
+pub fn bgMagentaBright(String) -> String
+
+pub fn bgRed(String) -> String
+
+pub fn bgRedBright(String) -> String
+
+pub fn bgWhite(String) -> String
+
+pub fn bgWhiteBright(String) -> String
+
+pub fn bgYellow(String) -> String
+
+pub fn bgYellowBright(String) -> String
+
+pub fn black(String) -> String
+
+pub fn blue(String) -> String
+
+pub fn blueBright(String) -> String
+
+pub fn bold(String) -> String
+
+pub fn cyan(String) -> String
+
+pub fn cyanBright(String) -> String
+
+pub fn dim(String) -> String
+
+pub fn format(Int, Int) -> (String) -> String
+
+pub fn gray(String) -> String
+
+pub fn green(String) -> String
+
+pub fn greenBright(String) -> String
+
+pub fn hidden(String) -> String
+
+pub fn inverse(String) -> String
+
+pub fn italic(String) -> String
+
+pub fn magenta(String) -> String
+
+pub fn magentaBright(String) -> String
+
+pub fn overline(String) -> String
+
+pub fn red(String) -> String
+
+pub fn redBright(String) -> String
+
+pub fn reset(String) -> String
+
+pub fn strikethrough(String) -> String
+
+pub fn underline(String) -> String
+
+pub fn white(String) -> String
+
+pub fn whiteBright(String) -> String
+
+pub fn yellow(String) -> String
+
+pub fn yellowBright(String) -> String
 
 // Errors
 

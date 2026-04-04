@@ -1,0 +1,40 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "xrr2016/tui/inputs"
+
+// Values
+pub fn is_arrow_key(Key) -> Bool
+
+pub fn is_modifier_key(Key) -> Bool
+
+pub fn is_navigation_key(Key) -> Bool
+
+pub fn key_to_string(Key) -> String
+
+// Errors
+
+// Types and methods
+pub enum Key {
+  Up
+  Down
+  Left
+  Right
+  Home
+  End
+  PageUp
+  PageDown
+  Enter
+  Escape
+  Space
+  Backspace
+  Tab
+  Delete
+  Char(String)
+  CtrlC
+  CtrlD
+  Unknown
+}
+
+// Type aliases
+
+// Traits
+

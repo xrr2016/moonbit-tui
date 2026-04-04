@@ -1,4 +1,44 @@
 ///|
+pub const ESC : String = "\u001B["
+
+///|
+pub let cursor_left : String = ESC + "G"
+
+///|
+pub let cursor_hide : String = ESC + "?25l"
+
+///|
+pub let cursor_show : String = ESC + "?25h"
+
+///|
+pub let cursor_up : (Int) -> String = (rows : Int) => {
+  guard rows > 0 else { "" }
+  "\{ESC}\{rows}A"
+}
+
+///|
+pub let cursor_down : (Int) -> String = (rows : Int) => {
+  guard rows > 0 else { "" }
+  "\{ESC}\{rows}B"
+}
+
+///|
+// pub let cursor_to : (Int, Int?) -> String = (x : Int, y : Int) => {
+//   guard x is  && y is [0..] else { "\{ESC}\{y + 1};{x + 1}H" }
+
+//   "\{ESC}\{x + 1}G"
+// }
+
+///|
+pub let erase_line : String = ESC + "2K"
+
+///|
+pub let erase_lines : (Int) -> String = (lines : Int) => {
+  guard lines > 0 else { "" }
+  (erase_line + cursor_up(1)).repeat(lines) + erase_line + cursor_left
+}
+
+///|
 pub fn format(open : Int, close : Int) -> (String) -> String {
   let openCode = "\u001B[\{open}m"
   let closeCode = "\u001B[\{close}m"

@@ -1,0 +1,127 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "xrr2016/tui/prompts"
+
+// Values
+pub fn checkbox(CheckboxConfig) -> Array[String]
+
+pub fn confirm(ConfirmConfig) -> Bool
+
+pub fn expand(ExpandConfig) -> String
+
+pub fn input(InputConfig) -> String
+
+pub fn number(NumberConfig) -> Int
+
+pub fn password(PasswordConfig) -> String
+
+pub fn rawlist(RawlistConfig) -> Int
+
+pub fn render_checkbox_option(CheckboxOption, Int, Bool) -> String
+
+pub fn render_confirm(ConfirmConfig, Bool) -> String
+
+pub fn render_expand_option(ExpandOption, Int, Bool, Bool) -> String
+
+pub fn render_input(InputConfig, String, Int) -> String
+
+pub fn render_number(NumberConfig, Int) -> String
+
+pub fn render_option(SelectOption, Int, Bool, Bool) -> String
+
+pub fn render_password(PasswordConfig) -> String
+
+pub fn render_rawlist_option(String, Int, Bool) -> String
+
+pub fn render_search(SearchConfig, String) -> String
+
+pub fn search(SearchConfig) -> String
+
+pub fn select(SelectConfig) -> Int
+
+pub fn select_value(SelectConfig) -> String
+
+pub fn validate_email(String) -> Bool
+
+pub fn validate_length(Int, Int, String) -> Bool
+
+pub fn validate_number(String) -> Bool
+
+pub fn validate_required(String) -> Bool
+
+// Errors
+
+// Types and methods
+pub struct CheckboxConfig {
+  message : String
+  options : Array[CheckboxOption]
+}
+
+pub struct CheckboxOption {
+  name : String
+  value : String
+  checked : Bool
+}
+
+pub struct ConfirmConfig {
+  message : String
+  initial : Bool
+}
+
+pub struct ExpandConfig {
+  message : String
+  options : Array[ExpandOption]
+  default : Int
+}
+
+pub struct ExpandOption {
+  name : String
+  value : String
+  key : String
+}
+
+pub struct InputConfig {
+  message : String
+  default : String
+  validator : (String) -> Bool
+  transformer : (String) -> String
+}
+
+pub struct NumberConfig {
+  message : String
+  default : Int
+  min : Int
+  max : Int
+}
+
+pub struct PasswordConfig {
+  message : String
+  mask : String
+}
+
+pub struct RawlistConfig {
+  message : String
+  options : Array[String]
+  default : Int
+}
+
+pub struct SearchConfig {
+  message : String
+  default : String
+}
+
+pub struct SelectConfig {
+  message : String
+  options : Array[SelectOption]
+  initial : Int
+}
+
+pub struct SelectOption {
+  name : String
+  value : String
+  description : String
+}
+
+// Type aliases
+
+// Traits
+

@@ -2,6 +2,7 @@
 package "xrr2016/tui"
 
 // Values
+pub fn version() -> String
 
 // Errors
 
