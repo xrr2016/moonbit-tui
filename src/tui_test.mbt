@@ -1,4 +1,4 @@
 ///|
-test "clear" {
+async test "clear" {
   @tui.clear()
 }
