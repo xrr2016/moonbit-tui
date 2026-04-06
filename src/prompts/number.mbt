@@ -1,5 +1,4 @@
 ///|
-
 pub struct NumberConfig {
   message : String
   default : Int
@@ -7,6 +6,7 @@ pub struct NumberConfig {
   max : Int
 }
 
+///|
 pub fn number(config : NumberConfig) -> Int {
   println(config.message)
   if config.default > 0 {
@@ -15,6 +15,7 @@ pub fn number(config : NumberConfig) -> Int {
   config.default
 }
 
+///|
 pub fn render_number(config : NumberConfig, value : Int) -> String {
   config.message + "\n> "
 }

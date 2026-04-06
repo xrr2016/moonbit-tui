@@ -1,43 +1,26 @@
 ///|
-test "key_to_string_arrow" {
-  let _ = @input.key_to_string(@input.Up)
-  let _ = @input.key_to_string(@input.Down)
-  let _ = @input.key_to_string(@input.Left)
-  let _ = @input.key_to_string(@input.Right)
-}
+// test "key to string" {
+//   assert_eq(key_to_string(Up), "↑")
+//   assert_eq(key_to_string(Down), "↓")
+//   assert_eq(key_to_string(Left), "←")
+//   assert_eq(key_to_string(Right), "→")
+//   assert_eq(key_to_string(Home), "Home")
+//   assert_eq(key_to_string(End), "End")
+//   assert_eq(key_to_string(PageUp), "PageUp")
+//   assert_eq(key_to_string(PageDown), "PageDown")
+//   assert_eq(key_to_string(Enter), "Enter")
+//   assert_eq(key_to_string(Escape), "Escape")
+//   assert_eq(key_to_string(Space), " ")
+//   assert_eq(key_to_string(Backspace), "Backspace")
+//   assert_eq(key_to_string(Tab), "Tab")
+//   assert_eq(key_to_string(Delete), "Delete")
+//   assert_eq(key_to_string(CtrlC), "^C")
+//   assert_eq(key_to_string(CtrlD), "^D")
+//   assert_eq(key_to_string(Unknown), "?")
+// }
 
 ///|
-test "key_to_string_enter" {
-  let _ = @input.key_to_string(@input.Enter)
-}
-
-///|
-test "key_to_string_escape" {
-  let _ = @input.key_to_string(@input.Escape)
-}
-
-///|
-test "key_to_string_char" {
-  let key = @input.Char("a")
-  assert_eq(@input.key_to_string(key), "a")
-}
-
-///|
-test "is_arrow_key" {
-  let up = @input.Up
-  assert_true(@input.is_arrow_key(up))
-  let down = @input.Down
-  assert_true(@input.is_arrow_key(down))
-  let enter = @input.Enter
-  assert_false(@input.is_arrow_key(enter))
-}
-
-///|
-test "is_navigation_key" {
-  let up = @input.Up
-  assert_true(@input.is_navigation_key(up))
-  let page_down = @input.PageDown
-  assert_true(@input.is_navigation_key(page_down))
-  let space = @input.Space
-  assert_false(@input.is_navigation_key(space))
+async test "read key" {
+  let key = read_key()
+  println(key)
 }

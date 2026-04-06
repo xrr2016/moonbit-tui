@@ -1,5 +1,4 @@
 ///|
-
 pub struct InputConfig {
   message : String
   default : String
@@ -7,6 +6,7 @@ pub struct InputConfig {
   transformer : (String) -> String
 }
 
+///|
 pub fn input(config : InputConfig) -> String {
   println(config.message)
   if config.default.length() > 0 {
@@ -15,23 +15,32 @@ pub fn input(config : InputConfig) -> String {
   config.default
 }
 
-pub fn render_input(config : InputConfig, value : String, cursor_pos : Int) -> String {
+///|
+pub fn render_input(
+  config : InputConfig,
+  value : String,
+  cursor_pos : Int,
+) -> String {
   config.message + "\n> " + value
 }
 
+///|
 pub fn validate_required(value : String) -> Bool {
   value.trim().length() > 0
 }
 
+///|
 pub fn validate_length(min : Int, max : Int, value : String) -> Bool {
   let len = value.length()
   len >= min && len <= max
 }
 
+///|
 pub fn validate_email(value : String) -> Bool {
   value.contains("@") && value.contains(".")
 }
 
+///|
 pub fn validate_number(_value : String) -> Bool {
   false
 }
