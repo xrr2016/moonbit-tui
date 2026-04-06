@@ -2,7 +2,8 @@
   "name": "xrr2016/tui",
   "version": "0.2.0",
   "deps": {
-    "moonbitlang/async": "0.17.0"
+    "moonbitlang/async": "0.16.6",
+    "mizchi/tui": "0.8.0"
   },
   "readme": "README.md",
   "repository": "https://github.com/xrr2016/moonbit-tui",

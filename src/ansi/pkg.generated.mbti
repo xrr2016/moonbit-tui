@@ -2,6 +2,8 @@
 package "xrr2016/tui/ansi"
 
 // Values
+pub const ESC : String = "\x1b["
+
 pub fn bgBlack(String) -> String
 
 pub fn bgBlue(String) -> String
@@ -42,11 +44,25 @@ pub fn blueBright(String) -> String
 
 pub fn bold(String) -> String
 
+pub fn cursor_down(Int) -> String
+
+pub let cursor_hide : String
+
+pub let cursor_left : String
+
+pub let cursor_show : String
+
+pub fn cursor_up(Int) -> String
+
 pub fn cyan(String) -> String
 
 pub fn cyanBright(String) -> String
 
 pub fn dim(String) -> String
+
+pub let erase_line : String
+
+pub fn erase_lines(Int) -> String
 
 pub fn format(Int, Int) -> (String) -> String
 

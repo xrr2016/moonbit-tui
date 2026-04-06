@@ -13,7 +13,7 @@ pub fn key_to_string(Key) -> String
 // Errors
 
 // Types and methods
-pub enum Key {
+pub(all) enum Key {
   Up
   Down
   Left

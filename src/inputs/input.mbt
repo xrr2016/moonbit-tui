@@ -80,10 +80,3 @@ pub fn is_navigation_key(key : Key) -> Bool {
 pub fn is_modifier_key(key : Key) -> Bool {
   key is Escape || key is Tab
 }
-
-///|
-pub fn read_input() -> Unit {
-  @process.write_to_process() catch {
-
-  }
-}

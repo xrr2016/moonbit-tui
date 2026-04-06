@@ -1,26 +1,20 @@
 ///|
-// test "key to string" {
-//   assert_eq(key_to_string(Up), "↑")
-//   assert_eq(key_to_string(Down), "↓")
-//   assert_eq(key_to_string(Left), "←")
-//   assert_eq(key_to_string(Right), "→")
-//   assert_eq(key_to_string(Home), "Home")
-//   assert_eq(key_to_string(End), "End")
-//   assert_eq(key_to_string(PageUp), "PageUp")
-//   assert_eq(key_to_string(PageDown), "PageDown")
-//   assert_eq(key_to_string(Enter), "Enter")
-//   assert_eq(key_to_string(Escape), "Escape")
-//   assert_eq(key_to_string(Space), " ")
-//   assert_eq(key_to_string(Backspace), "Backspace")
-//   assert_eq(key_to_string(Tab), "Tab")
-//   assert_eq(key_to_string(Delete), "Delete")
-//   assert_eq(key_to_string(CtrlC), "^C")
-//   assert_eq(key_to_string(CtrlD), "^D")
-//   assert_eq(key_to_string(Unknown), "?")
-// }
-
-///|
-async test "read key" {
-  let key = read_key()
-  println(key)
+test "key to string" {
+  assert_eq(key_to_string(Up), "↑")
+  assert_eq(key_to_string(Down), "↓")
+  assert_eq(key_to_string(Left), "←")
+  assert_eq(key_to_string(Right), "→")
+  assert_eq(key_to_string(Home), "Home")
+  assert_eq(key_to_string(End), "End")
+  assert_eq(key_to_string(PageUp), "PageUp")
+  assert_eq(key_to_string(PageDown), "PageDown")
+  assert_eq(key_to_string(Enter), "Enter")
+  assert_eq(key_to_string(Escape), "Escape")
+  assert_eq(key_to_string(Space), " ")
+  assert_eq(key_to_string(Backspace), "Backspace")
+  assert_eq(key_to_string(Tab), "Tab")
+  assert_eq(key_to_string(Delete), "Delete")
+  assert_eq(key_to_string(CtrlC), "^C")
+  assert_eq(key_to_string(CtrlD), "^D")
+  assert_eq(key_to_string(Unknown), "?")
 }

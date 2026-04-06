@@ -1,1 +1,3 @@
-# xrr2016/tui
+# MoonBit Terminal UI
+
+Terminal UI library for MoonBit.
