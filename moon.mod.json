@@ -17,5 +17,5 @@
     "prompts"
   ],
   "source": "src",
-  "preferred-target": "native"
+  "preferred-target": "js"
 }

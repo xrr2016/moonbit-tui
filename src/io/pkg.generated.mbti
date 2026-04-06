@@ -2,7 +2,7 @@
 package "xrr2016/tui/io"
 
 // Values
-pub fn terminal_size() -> Unit
+pub fn terminal_size() -> (Int, Int)
 
 // Errors
 

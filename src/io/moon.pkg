@@ -1,3 +1,3 @@
-import {
-  "mizchi/tui/io" @mizchi_io,
-}
+options(
+  targets: { "io.mbt": [ "js" ], "io_test.mbt": [ "js" ] },
+)
