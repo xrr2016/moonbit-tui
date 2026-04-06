@@ -1,8 +1,7 @@
 // Generated using `moon info`, DON'T EDIT IT
-package "xrr2016/tui/io"
+package "xrr2016/tui-io"
 
 // Values
-pub fn terminal_size() -> (Int, Int)
 
 // Errors
 

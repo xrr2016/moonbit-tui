@@ -1,5 +1,5 @@
 // Generated using `moon info`, DON'T EDIT IT
-package "xrr2016/tui/ansi"
+package "xrr2016/tui-ansi"
 
 // Values
 pub const ESC : String = "\x1b["

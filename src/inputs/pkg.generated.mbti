@@ -1,5 +1,5 @@
 // Generated using `moon info`, DON'T EDIT IT
-package "xrr2016/tui/inputs"
+package "xrr2016/tui-inputs"
 
 // Values
 pub fn is_arrow_key(Key) -> Bool

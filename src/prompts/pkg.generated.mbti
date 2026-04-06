@@ -1,5 +1,5 @@
 // Generated using `moon info`, DON'T EDIT IT
-package "xrr2016/tui/prompts"
+package "xrr2016/tui-prompts"
 
 // Values
 pub fn checkbox(CheckboxConfig) -> Array[String]
