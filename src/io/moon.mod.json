@@ -1,0 +1,14 @@
+{
+  "name": "xrr2016/tui-io",
+  "version": "0.1.0",
+  "deps": {
+  },
+  "readme": "README.md",
+  "repository": "https://github.com/xrr2016/moonbit-tui/src/io",
+  "license": "Apache-2.0",
+  "keywords": [
+    "terminal",
+    "io"
+  ],
+  "preferred-target": "native"
+}

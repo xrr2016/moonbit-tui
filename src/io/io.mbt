@@ -6,7 +6,6 @@ extern "js" fn js_get_terminal_columns() -> Int =
   #| }
 
 ///|
-/// Get terminal rows
 extern "js" fn js_get_terminal_rows() -> Int =
   #| () => {
   #|   if (typeof process === 'undefined') return 24;
@@ -14,23 +13,21 @@ extern "js" fn js_get_terminal_rows() -> Int =
   #| }
 
 ///|
-extern "js" fn enable_raw() -> Int =
+extern "js" fn js_enable_raw() -> Int =
   #| () => {
   #|   if (process.stdin.isTTY) {
   #|     process.stdin.setRawMode(true);
   #|     return 0;
   #|   }
   #|   return -1;
-  #|  }
+  #| }
 
 ///|
-/// Get the terminal size.
 pub fn get_terminal_size() -> (Int, Int) {
-  (get_terminal_cols(), get_terminal_rows())
+  (js_get_terminal_columns(), js_get_terminal_rows())
 }
 
 ///|
-/// Set the terminal to raw mode.
-pub fn set_raw_mode() {
-  println("set_raw_mode")
+pub fn set_raw_mode() -> Unit {
+  js_enable_raw() |> ignore
 }

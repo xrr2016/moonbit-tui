@@ -1,0 +1,14 @@
+{
+  "name": "xrr2016/tui-prompts",
+  "version": "0.1.0",
+  "deps": {
+  },
+  "readme": "README.md",
+  "repository": "https://github.com/xrr2016/moonbit-tui/src/prompts",
+  "license": "Apache-2.0",
+  "keywords": [
+    "terminal",
+    "prompts"
+  ],
+  "preferred-target": "native"
+}
